@@ -4,9 +4,253 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landing.css">
+  
 </head>
 <body>
-    <h1>hi everyone</h1>
+     <!-- walmartLogo/Home button  -->
+     <div class="header">
+        <a href="http://127.0.0.1:5500/Landing-Page/Home/landingPage.html">
+          <img
+            loading="lazy"
+            src="https://i5.walmartimages.com/dfw/63fd9f59-b3e1/7a569e53-f29a-4c3d-bfaf-6f7a158bfadd/v1/walmartLogo.svg"
+            alt="walmart"
+            width="130"
+          />
+        </a>
+  
+        <!-- Departments dropdown-->
+        <div class="dropdown" data-dropdown>
+          <button class="NavHead" data-dropdown-button>Department</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">All Departments</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Electronics</a>
+                <a href="#" class="link">Grocery</a>
+                <a href="#" class="link">Clothings</a>
+                <a href="#" class="link">Appliances</a>
+                <a href="#" class="link">Home</a>
+                <a href="#" class="link">Toys & Video Games</a>
+                <a href="#" class="link">Beauty</a>
+                <a href="#" class="link">Personal Care</a>
+                <a href="#" class="link">Arts & Craft</a>
+                <a href="#" class="link">Health & Wellness</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Services dropdown-->
+        <div class="dropdown" data-dropdown>
+          <button class="NavHead" data-dropdown-button>Services</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">All Services</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Auto Care center services</a>
+                <a href="#" class="link">Health Services</a>
+                <a href="#" class="link">Registry,List & Gifts</a>
+                <a href="#" class="link">Holiday Gifting & Services</a>
+                <a href="#" class="link">Custom Cakes</a>
+                <a href="#" class="link">Photo Services</a>
+                <a href="#" class="link">Financial Services</a>
+                <a href="#" class="link">Community & Giving</a>
+                <a href="#" class="link">Get Inspired</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Search-Bar  -->
+        <div id="searchmenu">
+          <input
+            type="search"
+            name=""
+            placeholder="     Search anything at Walmart online and in store"
+          />
+          <i class="searchBtnIcon"><ion-icon name="search-circle-outline"></ion-icon></i>
+        </div>
+        <!-- after-searchbar-rest-menu-bar -->
+  
+        <!-- My items dropdown-->
+        <div class="dropdown" data-dropdown>
+          <button class="NavHead" data-dropdown-button>My Items</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Reorder</a>
+  
+                <a href="#" class="link">List</a>
+  
+                <a href="#" class="link">Registries</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Sign-In drop  -->
+  
+        <div class="dropdown" data-dropdown>
+          <button class="NavHead" data-dropdown-button>Sign-in/Account</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-links">
+                <a href="/AccountSection/Sign In.html" class="link">Sign in</a>
+  
+                <a href="/AccountSection/Create Account.html" class="link">create an account</a>
+  
+                <a href="#" class="link">Purchase History</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+      </div>
+
+      <!-- this code is writen by shoaib for cart icon start from here till next commant out -->
+      <div class="img"><img style="z-index: 1; position: absolute; border-radius: 40px;" onclick="popup()" src="https://www.kindpng.com/picc/m/714-7147296_digicollect-cart-icon-png-download-jet-com-walmart.png" height="40px" width="40px"></div>
+
+      <!-- end -->
+
+  <!-- Div (just below slideshow banner) /shoaib(static work) starting -->
+
+
+      <!-- cfor you row start  -->
+
+      <div id="mainbox">
+         <h2>For you</h2>
+         <div id="inmainbox">
+         <div id="box">
+             <img onclick="shopNow()" src="https://i5.walmartimages.com/dfw/8822aef6-564c/k2-_42a3545d-5d08-4fa6-9d6d-161f140885e5.v1.jpg" placeholder="gift card">
+             <h3 onclick="shopNow()">Holiday gift cards</h3>
+             <h4 onclick="shopNow()">Give them more to choose from this season.</h4>
+             <!-- <br> -->
+            <button type="button" onclick="shopNow()">Shop Now</button>
+         </div>
+         <div id="box">
+             <img onclick="sd()" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/christmas-pun-capptions-1568197785.jpg?resize=480:*" placeholder="Warm clothes">
+             <h3 onclick="sd()">Stay warm in style</h3>
+             <h4 onclick="sd()">Go all out in this season's top looks.</h4>
+             <!-- <br> -->
+            <button type="button" onclick="sd()">Shop Now</button>
+         </div>
+         <div id="box" class="last">
+             <img onclick="ln()" src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2012/11/8/3/rx-hgmag006_holiday-ready-rooms-130-a_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1400975921529.jpeg" placeholder="holiday home">
+             <h3 onclick="ln()">Get guest-ready</h3>
+             <h4 onclick="ln()">Turn your home into holiday headquarters with decor & more.</h4>
+             <button type="button" onclick="ln()">Shop Now</button>
+         </div>
+         </div>
+     </div>
+     <!-- for you row end here -->
+
+
+     <!-- very very important portion for maping and adding this items to the cart -->
+     <!-- i just leaving space for maping work by deploing a div with same id="cartItem"
+      so that i use this id for mapping and adding this values to the cart -->
+      <div id="mainbox">
+        <h2>Build your cart</h2>
+        <div id="cartItem">
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- covid related row  start-->
+      <div id="mainbox">
+         <h2>COVID-19 info & updates</h2>
+         <div id="inmainbox">
+         <div id="box">
+             <img onclick="shopCovidVaccine()" src="https://img.medscapestatic.com/pi/features/drugdirectory/octupdate/00205003.jpg?output-quality=50" placeholder="binaxNow">
+             <h3 onclick="shopCovidVaccine()">At-home COVID-19 tests</h3>
+             <h4 onclick="shopCovidVaccine()">Now available at Walmart.</h4>
+             <br>
+            <button type="button" onclick="shopCovidVaccine()">Shop now</button>
+         </div>
+         <div id="box">
+             <img onclick="bookSlot()" src="https://media.nature.com/lw800/magazine-assets/d41586-021-02385-x/d41586-021-02385-x_19618276.jpg" placeholder="covid_vaccine & booster">
+             <h3 onclick="bookSlot()">COVID vaccine & booster</h3>
+             <h4 onclick="bookSlot()">Now available for eligible patients.</h4>
+             <br>
+            <button type="button" onclick="bookSlot()">Schedule Now</button>
+         </div>
+         <div id="box" class="last">
+             <img onclick="recordCheck()" src="https://s3.xopic.de/openwho-public/courses/2pnKJ3tt4lHsLasrJNcSOT/visual_v1.png" placeholder="vaccine record">
+             <h3 onclick="recordCheck()">COVID-19 vaccine record</h3>
+             <h4 onclick="recordCheck()">Vaccinated at a Walmart pharmacy? Access your digital card.</h4>
+             <button type="button" onclick="recordCheck()">Learn more</button>
+         </div>
+         </div>
+     </div>
+     <!-- covid related row end -->
+
+     <!-- share value row start -->
+      <div id="mainbox">
+        <h2>Sharing our values</h2>
+        <div id="inmainbox">
+        <div id="box">
+            <img onclick="shopNow()" src="https://lh3.googleusercontent.com/lhn_0XO4zwmH7slLQyhc4FPqLMy9S6B4brIawQ2GVrKbWLwELmqWx4qIsMvLHSDw4njcwnK26kCbrYbVs5c5xovYJBdizNRPhTpEZVvaUA" placeholder="bixaxnow">
+            <h3 onclick="shopNow()">Grant a holiday wish</h3>
+            <h4 onclick="shopNow()">Give to families near you through the Angel Tree program.</h4>
+            <!-- <br> -->
+          <button type="button" onclick="shopNow()">Learn more</button>
+        </div>
+        <div id="box">
+            <img onclick="sd()" src="https://lh3.googleusercontent.com/l5Ojld9CL0bMhhc0vp7PCOT4t8qh6A0oQj5fp77s1ZzInF_Cd1A8qNau5i9AM5bX-8yz_V_7cgGSrhSMtdaL1YFcQyGRYw9TaPL53l96yQ" placeholder="covid_vaccine & booster">
+            <h3 onclick="sd()">Together Somos Más</h3>
+            <h4 onclick="sd()">Celebrating nuestra comunidad today & building a bright tomorrow.</h4>
+            <!-- <br> -->
+          <button type="button" onclick="sd()">Learn more</button>
+        </div>
+        <div id="box" class="last">
+            <img onclick="ln()" src="https://mcdn.wallpapersafari.com/medium/8/45/IP1d63.jpg" placeholder="vaccine record">
+            <h3 onclick="ln()">Built for Better</h3>
+            <h4 onclick="ln()">Products designed to help your needs & live by your values.</h4>
+            <button type="button" onclick="ln()">Shop Now</button>
+        </div>
+        </div>
+    </div>
+    <!-- share value row end -->
+  <!-- Div (just above footer static row ) ending-->
+
+
+      <!-- footerBar_Start -->
+      <footer>
+        <div id="footer">
+          <div class="lightBlue">
+            <p>Wed love to hear what you think!</p>
+            <button class="feed" type="button">Give Feedback</button>
+          </div>
+        </div>
+        <div class="darkBlue">
+          <ul>
+            <li>All Departments</li>
+            <li>Store Directory</li>
+            <li>Weekly Ad</li>
+            <li>Careers</li>
+            <li>Our Company</li>
+            <li>Sell on Walmart.com</li>
+            <li>Help</li>
+            <li>COVID-19 Vaccine Scheduler</li>
+            <li>Product Recalls</li>
+            <li>Get the Walmart App</li>
+            <li>Terms of Use</li>
+            <li>Privacy & Security</li>
+            <li>CA Privacy Rights</li>
+            <li>Do Not Sell My Personal Information</li>
+            <li>Request My Personal Information</li>
+          </ul>
+          <div>© 2021 Walmart. All Rights Reserved.</div>
+        </div>
+      </footer>
 </body>
+<script src="landing.js"></script>
 </html>
